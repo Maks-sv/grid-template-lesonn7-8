@@ -18,3 +18,9 @@
   - -v
 * git remote
 * git push
+* git clone
+* git pull
+* git reset
+  - -hard
+* git push
+  - -force
