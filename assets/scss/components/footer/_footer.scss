@@ -2,11 +2,32 @@
 @use "../../mixins" as *;
 
 .footer {
+  background-color: $color-primary;
+  margin-top: 10px;
+  padding: 60px;
   .footer__container {
     @extend %container;
   }
   .footer__media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .fab {
+    font-size: 36px;
+  }
+  &__media::after {
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 40px);
+    width: 75px;
+    height: 2px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.1);
   }
   .footer__copy {
+    padding-top: 20px;
+    text-align: center;
   }
 }

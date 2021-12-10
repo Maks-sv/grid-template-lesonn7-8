@@ -2,15 +2,34 @@
 @use "../../mixins" as *;
 
 .section-posts {
+  h3,
+  p {
+    color: black;
+  }
   &__container {
     @extend %container;
   }
   &__img {
+    gap: 20px;
+    display: grid;
+    grid-template-areas: "b1 b1 b2 b3" "b4 b5 b6 b6";
+    grid-template-columns: repeat(4, 1fr);
   }
   &__item {
   }
   &__link {
+    gap: 20px;
+    display: grid;
+    height: 100%;
   }
   &__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@for $i from 1 through 6 {
+  .section-posts__item:nth-of-type(#{$i}) {
+    grid-area: b#{$i};
   }
 }
