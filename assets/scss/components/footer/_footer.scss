@@ -1,0 +1,12 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer {
+  .footer__container {
+    @extend %container;
+  }
+  .footer__media {
+  }
+  .footer__copy {
+  }
+}
