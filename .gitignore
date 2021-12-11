@@ -1,10 +1,4 @@
-node_modules/*
-samples/*
-libs/*
+node_modules/
 # IntellijIdea files
-.idea/*
+.idea/
 .DS_Store
-package-lock.json
-.csscomb.json
-gulpfile.js
-.yarn.package.json
