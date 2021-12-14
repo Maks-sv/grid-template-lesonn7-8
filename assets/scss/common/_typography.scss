@@ -34,8 +34,7 @@ h1 {
 }
 h2 {
   font-size: $gap-x2;
-  letter-spacing: 4px;
-  /* line-height: 48px; */
+  letter-spacing: 0.1em;
   color: #2d3651;
   font-family: $font-header;
   line-height: 1.2em;
@@ -43,4 +42,8 @@ h2 {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+p {
+  font-size: 1.125rem;
+  font-family: $font-main;
 }
