@@ -3,7 +3,7 @@
 
 .section-about {
   padding-top: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
   background-color: $color-gray-light;
   letter-spacing: 0.055em;
 
@@ -28,12 +28,12 @@
     }
     p:first-of-type::after {
       position: absolute;
-      top: 27%;
+      top: 28%;
       right: -50px;
       width: 2px;
       height: 200px;
       content: "";
-      background-color: rgba(99, 117, 136, 0.1);
+      background-color: rgba($color-gray, 0.1);
     }
   }
   &__img {
