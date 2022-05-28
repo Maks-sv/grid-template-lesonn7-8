@@ -8,10 +8,9 @@
 }
 html {
   overflow-y: scroll;
-  font-family: $font-header;
+  font-family: $font-main;
   font-size: $font-size;
   color: #637588;
-  letter-spacing: 0.1em;
 }
 h1 {
   font-family: $font-header;
@@ -45,5 +44,4 @@ a {
 }
 p {
   font-size: 1.125rem;
-  font-family: $font-main;
 }

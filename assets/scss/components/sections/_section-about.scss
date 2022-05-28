@@ -26,9 +26,8 @@
     p:last-of-type {
       margin: 0;
     }
-    p:first-of-type::after {
+    p:first-of-type::before {
       position: absolute;
-      top: 28%;
       right: -50px;
       width: 2px;
       height: 200px;
