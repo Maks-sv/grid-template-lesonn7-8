@@ -8,17 +8,21 @@
 }
 html {
   overflow-y: scroll;
+
+  color: $color-gray;
+
   font-family: $font-main;
   font-size: $font-size;
-  color: $color-gray;
 }
 h1 {
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: $color-light;
+
   font-family: $font-header;
   font-size: 3.75rem;
-  letter-spacing: 0.08em;
-  color: $color-light;
   font-weight: 300;
-  text-align: center;
   line-height: 1.2em;
 
   @include lg-min {
@@ -32,19 +36,23 @@ h1 {
   }
 }
 h2 {
-  font-size: 2.5rem;
   letter-spacing: 0.1em;
+
   color: #2d3651;
+
   font-family: $font-header;
+  font-size: 2.5rem;
   line-height: 1.2em;
 }
 a {
   text-decoration: none;
+
   color: $color-light;
 }
 p {
   font-size: 1.125rem;
-  @include lg{
-    font-size:$font-size;
+
+  @include lg {
+    font-size: $font-size;
   }
 }

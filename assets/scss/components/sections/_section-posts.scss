@@ -1,34 +1,35 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
-.posts{
- @extend %header-indent ;
+.posts {
+  @extend %header-indent ;
   &__container {
     @extend %container;
   }
-  &__blocks{
-  padding: 0 0 $gap 0;
-  gap: $gap;
-  display: grid;
-  
-  grid-template-areas: "b1 b1 b2 b3" "b4 b5 b6 b6";
-  grid-template-columns: repeat(4, 1fr);
-  @include lg-md {
-    grid-template-areas: "b1 b1 b2 " "b3 b4 b4" "b5 b5 b6";
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @include md-sm{
-    grid-template-areas: "b1 b2 " "b3 b4" "b5 b6";
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include sm{
-    grid-template-areas: "b1" "b2" "b3" "b4" "b5" "b6";
-    grid-template-columns: repeat(1, 1fr);
-  }
+  &__blocks {
+    display: grid;
+
+    padding: 0 0 $gap 0;
+
+    gap: $gap;
+    grid-template-areas: "b1 b1 b2 b3" "b4 b5 b6 b6";
+    grid-template-columns: repeat(4, 1fr);
+    @include lg-md {
+      grid-template-areas: "b1 b1 b2 " "b3 b4 b4" "b5 b5 b6";
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include md-sm {
+      grid-template-areas: "b1 b2 " "b3 b4" "b5 b6";
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include sm {
+      grid-template-areas: "b1" "b2" "b3" "b4" "b5" "b6";
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   h2 {
-@extend %h2;
+    @extend %h2;
   }
   &__action {
-    @include flex-position
+    @include flex-position;
   }
 }

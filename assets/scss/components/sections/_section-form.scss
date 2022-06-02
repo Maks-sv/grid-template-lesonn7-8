@@ -2,43 +2,45 @@
 @use "../../mixins" as *;
 
 .section-form {
-  background-color: $color-primary;
   padding: $gap-lg 0;
+
+  background-color: $color-primary;
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: $gap;
 
-    @include md-sm{
+    @extend %container;
+    gap: $gap;
+    grid-template-columns: repeat(3, 1fr);
+    @include md-sm {
       grid-template-columns: repeat(2, 1fr);
     }
-    @include sm{
+    @include sm {
       grid-template-columns: repeat(1, 1fr);
     }
-    @extend %container;
   }
   .section-form__item:nth-of-type(1) {
-    @include md-sm{
+    @include md-sm {
       grid-column: 1/span 2;
     }
   }
   .section-form__section {
-   border: none;
     width: 100%;
     height: $gap-x3;
     padding: 0 $gap-lg ;
-    outline: none;
-    color :white;
-   
+
+    transition: background-color 0.5s, border-color 0.5s;
+    letter-spacing: 0.15em;
+
+    color: white;
+    border: none;
     border: 2px solid rgba($color-light, 0);
     border-bottom: 2px solid rgba($color-light, 0.25);
+    outline: none;
     background-color: rgba($color-light, 0.05);
-    transition: background-color 0.5s, border-color 0.5s;
 
-    letter-spacing: 0.15em;
     font-size: 1.125rem;
-   
+
     &:hover,
     &:focus {
       border-color: rgba($color-light, 0.15);
@@ -46,11 +48,12 @@
       background-color: rgba($color-light, 0.15);
     }
   }
-  input::placeholder{
-    color:rgba($color-light,25%) ;
-    }
+  input::placeholder {
+    color: rgba($color-light,25%) ;
+  }
   .btn--primary {
     width: 100%;
+
     color: $color-light;
     border: 2px solid rgba($color-light, 0);
     border-bottom: 2px solid rgba($color-light, 0.2);
@@ -59,9 +62,9 @@
     &:hover,
     &:focus {
       cursor: pointer;
+
       border-color: $color-light;
       background-color: $color-accent;
     }
   }
-  
 }

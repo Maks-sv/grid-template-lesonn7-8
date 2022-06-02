@@ -3,54 +3,66 @@
 .post-item {
   position: relative;
   background-color: #f2f2f2;
-   
-&__link{
-    overflow: hidden;
+
+  &__link {
     display: grid;
+    overflow: hidden;
+
     height: 100%;
+
     grid-template-rows: 300px 1fr;
   }
- &__image{
-  @include flex-position;
-   overflow: hidden;
+  &__image {
+    overflow: hidden;
+
     background-color: $color-primary;
-    img{
-      transition: transform 0.5s;
-      width:100%;
+
+    @include flex-position;
+    img {
+      width: 100%;
       height: 100%;
+
+      transition: transform 0.5s;
+
       object-fit: cover;
-}
+    }
   }
   &__description {
     display: grid;
     align-content: center;
+
     padding: $gap;
-    transition:background-color 0.5s;
+
+    transition: background-color 0.5s;
   }
   h3 {
     text-align: center;
-    font-family: $font-header;
-    color: $color-gray;
     letter-spacing: 0.05em;
-    font-size: 1.125rem; 
+
+    color: $color-gray;
+
+    font-family: $font-header;
+    font-size: 1.125rem;
   }
   p {
-    color: $color-gray;
     text-align: center;
+
+    color: $color-gray;
+
     font-size: $font-size;
   }
 
-  &:hover .post-item__image img{
+  &:hover .post-item__image img {
     transform: scale(1.1);
   }
-  &:hover .post-item__description{
-   background-color: #d6d6d6;
+  &:hover .post-item__description {
+    background-color: #d6d6d6;
   }
-  &:hover h3{
-   color:$color-primary;
+  &:hover h3 {
+    color: $color-primary;
   }
-  &:hover p{
-   color:$color-primary;
+  &:hover p {
+    color: $color-primary;
   }
 }
 @for $i from 1 through 6 {

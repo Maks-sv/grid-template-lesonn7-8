@@ -3,12 +3,14 @@
 
 .btn {
   display: flex;
-  justify-content: center;
   align-items: center;
-  letter-spacing: 0.1em;
-  padding-left: 1em;
+  justify-content: center;
+
   padding-right: 1em;
+  padding-left: 1em;
+
   transition: background-color 0.5s, border-color 0.5s;
+  letter-spacing: 0.1em;
 
   &:hover,
   &:focus {
@@ -16,17 +18,19 @@
   }
 }
 .btn--light {
-  background-color: rgba($color-light, 0.1);
   border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
 
   @include lg-min {
-    height: $gap-x3;
     width: 250px;
+    height: $gap-x3;
+
     font-size: 1.125rem;
   }
   @include lg-md {
     width: 200px;
     height: 50px;
+
     font-size: 1rem;
   }
   @include md {
@@ -35,10 +39,12 @@
   }
 }
 .btn--primary {
-  background-color: rgba($color-primary, 0.8);
-  border: 2px solid $color-primary;
-  height: $gap-x3;
   width: 350px;
+  height: $gap-x3;
+
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
+
   font-size: 1.125rem;
 
   @include sm-min {
