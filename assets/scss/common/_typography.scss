@@ -16,7 +16,7 @@ h1 {
   font-family: $font-header;
   font-size: 3.75rem;
   letter-spacing: 0.08em;
-  color: #ffffff;
+  color: $color-light;
   font-weight: 300;
   text-align: center;
   line-height: 1.2em;
@@ -32,7 +32,7 @@ h1 {
   }
 }
 h2 {
-  font-size: $gap-x2;
+  font-size: 2.5rem;
   letter-spacing: 0.1em;
   color: #2d3651;
   font-family: $font-header;
@@ -40,8 +40,11 @@ h2 {
 }
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: $color-light;
 }
 p {
   font-size: 1.125rem;
+  @include lg{
+    font-size:$font-size;
+  }
 }

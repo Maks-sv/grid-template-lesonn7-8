@@ -56,7 +56,4 @@
   .skill-item:nth-of-type(#{$i}) {
     grid-area: a#{$i};
   }
-  // ul:nth-child(3n + #{$i}) {
-  //   background-color: lighten($base-color, $i * 5%);
-  // }
 }

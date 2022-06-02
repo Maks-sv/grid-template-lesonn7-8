@@ -109,6 +109,7 @@
       background-color: rgba($color-gray-dark, 0.9);
       position: absolute;
       top: 100%;
+      text-align:right;
 
       @include box-shadow;
       @include unlist;
@@ -116,7 +117,8 @@
   }
   &__item {
     @include md {
-      margin: $gap $gap-sm;
+      margin: $gap $gap;
+
     }
   }
   &__link {
